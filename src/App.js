@@ -29,7 +29,6 @@ class App extends Component {
       const [a,b,c] = winLines[i];
       let board = this.state.board;
       if(board[a] && board[a] === board[b] && board[b] === board[c]) {
-        alert('You won')
         this.setState({
           winner: this.state.player
         })

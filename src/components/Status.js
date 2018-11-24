@@ -5,9 +5,6 @@ class Status extends Component {
     handleSetPlayer = e => {
         this.props.setPlayer(e)
     }
-    handleReset = () => {
-        this.props.reset();
-    }
     renderHtml = () => {
         if(this.props.winner){
            return (<h2>Winner is {this.props.winner}</h2>)
